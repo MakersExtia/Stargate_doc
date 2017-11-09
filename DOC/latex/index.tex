@@ -1,0 +1,29 @@
+\hypertarget{index_intro_sec}{}\section{1. 1. Introduction}\label{index_intro_sec}
+The Stargate project aims to create a mechanical system allowing mobile robots to open doors. Current version \+: 1.\+3
+
+\hypertarget{index_multi_row}{}
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*3{|X[-1]}|}
+\caption{Versioning table }\label{index_multi_row}\\
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Version }&{\bf Functions }&{\bf Missing }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Version }&{\bf Functions }&{\bf Missing }\\\cline{1-3}
+\endhead
+0.\+1 &\char`\"{}go\+To\+Handle\char`\"{} and \char`\"{}move\+Door\char`\"{} stages are implemented &action\+Lib, interactions with Goa\textquotesingle{}Uld \\\cline{1-3}
+0.\+2 &Every stages implemented, launched from Goa\textquotesingle{}Uld &Communications with the visual tracking \\\cline{1-3}
+{\bfseries 1.\+0} &{\bfseries Final version of marc\textquotesingle{}s code} &{\bfseries Adapt the code with J\+A\+C\+K\+S\+ON} \\\cline{1-3}
+1.\+1 &First modifications of marc\textquotesingle{}s code &Modify the trajectory generator \\\cline{1-3}
+1.\+2 &New trajectory generator &Make it work !! \\\cline{1-3}
+1.\+3 &Code working + first version of the documentation &action\+Lib, interactions with Goa\textquotesingle{}Uld \\\cline{1-3}
+\end{longtabu}
+\hypertarget{index_navigation}{}\section{2. Principles of the Navigation code.}\label{index_navigation}
+v1.\+3 \+: using the command \char`\"{}rosrun navigation cmd\+\_\+ouverture.\+py\char`\"{} launches the navigation code.
+
+The file \hyperlink{cmd__ouverture_8py}{cmd\+\_\+ouverture.\+py} is the main file. It computes the desired trajectory based on the current {\itshape stage} and {\itshape step} using \hyperlink{classPointCreator}{Point\+Creator} and \hyperlink{classTrajFactory}{Traj\+Factory}.
+
+It then launches the control law in control.\hypertarget{index_phases_and_steps}{}\section{3. Descriptions of the phases and steps that make up a door opening.}\label{index_phases_and_steps}
+When trying to open a door by pulling it, here are the different stages that Goa Uld will launch. Each of them contains one or more steps. 

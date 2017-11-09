@@ -1,0 +1,43 @@
+\hypertarget{cmd__ouverture_8py}{}\section{cmd\+\_\+ouverture.\+py File Reference}
+\label{cmd__ouverture_8py}\index{cmd\+\_\+ouverture.\+py@{cmd\+\_\+ouverture.\+py}}
+
+
+This script creates the necessary R\+OS services and actionlib in order to navigate the robot. It is the main file of the navigation.  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecmd__TTB_1_1cmd__ouverture}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a69046dc4c4b699caef9e459f6620a389}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+handle\+Navigation} (req)
+\begin{DoxyCompactList}\small\item\em Main function of the navigation, it computes the trajectory using \hyperlink{classPointCreator}{Point\+Creator} and \hyperlink{classTrajFactory}{Traj\+Factory}, then launches \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a265af166b80f6b0fd2414926197bd440}{follow\+Trajectory} that control the robot to follow it. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a265af166b80f6b0fd2414926197bd440}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+follow\+Trajectory} (trajectoire\+\_\+dans\+\_\+\+Rr, req, c\+Door, ttb\+Pose, initiale\+Rotation)
+\begin{DoxyCompactList}\small\item\em Computes the controllers and launch the control law to follow the desired trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a77e047b8c9fe806c29d099b045513d1e}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+anonymous}
+\item 
+int \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_acccb0c5132d862843c65fc361ebbc8f4}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+F\+R\+E\+Q\+U\+E\+N\+CE} = 10
+\begin{DoxyCompactList}\small\item\em Sample frequence of the robot. \end{DoxyCompactList}\item 
+list \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_af294464cb92aea691b05f1097a4ea28d}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+vel\+Max} = \mbox{[}0.\+25,0.\+2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Maximum velocities of the robot (linear in \mbox{[}m\mbox{]} then angular \mbox{[}rad\mbox{]}) \+: mbase values are \mbox{[}0.\+25 m/s, 0.\+1 rad/s\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a24119bb105d758e611e887c6d4c2a2b1}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+listener} = ros\+Com.\+Turtlebot\+Listener(\char`\"{}/odom\char`\"{},F\+R\+E\+Q\+U\+E\+N\+CE)
+\begin{DoxyCompactList}\small\item\em Listener node from \hyperlink{namespacecmd__TTB_1_1rosCom}{ros\+Com}. \end{DoxyCompactList}\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a453ff2743ee8d9e0d8a9827f06ad3a4a}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+publisher} = ros\+Com.\+Turtlebot\+Publisher(F\+R\+E\+Q\+U\+E\+N\+CE)
+\begin{DoxyCompactList}\small\item\em Publisher node from \hyperlink{namespacecmd__TTB_1_1rosCom}{ros\+Com}. \end{DoxyCompactList}\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_ae3d69e9c63df8aea84f2ae92f853d24f}{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+service} = rospy.\+Service(\textquotesingle{}navigation\+T\+TB\textquotesingle{}, navigation\+T\+TB, handle\+Navigation)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This script creates the necessary R\+OS services and actionlib in order to navigate the robot. It is the main file of the navigation. 
+
+\begin{DoxyVersion}{Version}
+1.\+3
+\end{DoxyVersion}
+Creates a listener node to get the datas from the robot and a publisher to send the control velocities. The navigation is handled by a R\+OS service (should be depreciated for an action\+Lib in 0.\+2) associated with the main function handle\+Navigation. This function receives the current steps and stages of the door opening from Goa\textquotesingle{}Uld, as well as the information on the door. From those informations, this function computes the desired trajectory and control the robot in order to follow it. 

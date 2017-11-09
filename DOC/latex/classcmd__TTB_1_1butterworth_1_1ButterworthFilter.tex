@@ -1,0 +1,128 @@
+\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter}{}\section{cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter Class Reference}
+\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter}\index{cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter}}
+
+
+Inheritance diagram for cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classcmd__TTB_1_1butterworth_1_1ButterworthFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classcmd__TTB_1_1butterworth_1_1ButterworthFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a8f569482d8099798494dc38a16589f8f}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a770af7ed4ce5ed48fc9db1d42ca0b588}{filter} (self, lastY, newY, lastX, newX, last\+Theta, new\+Theta, F\+R\+EQ, u\+Instantaneous=0)
+\begin{DoxyCompactList}\small\item\em Return the linear and angular velocities estimated from the values of the pose of the robot, the frequency and the linear velocity estimated by TT (which is unreliable). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_ad8a64b6be0a7b11ab2626affc4df0955}{w\+Filtered\+\_\+prec}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_aa31176200eee925ee48f575d6d5acc9e}{w\+Filtered}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a112d92005652f64e47664227b5cf3c73}{w\+Raw\+\_\+prec}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a967096c3f7f90d51ee25cabe6153c67c}{w\+Brut}
+\begin{DoxyCompactList}\small\item\em w\+Brut \+: angular speed before applying Butterworth \end{DoxyCompactList}\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a72fb79f01a2e947721335436d2cfdaa7}{atan2lifter}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_ab699cd8db314b9845544edcf90efccc7}{u\+Filtered\+\_\+prec}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a1193cc0d35e56c0758e36ccdea45cfd4}{u\+Filtered}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_abadf344eae18ac29ab1b8f2784fef116}{u\+Raw\+\_\+prec}
+\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a0f4537c092a3823d6285cffd5e2b825f}{u\+Raw}
+\begin{DoxyCompactList}\small\item\em u\+Raw \+: linear speed before applying Butterworth \end{DoxyCompactList}\item 
+\hyperlink{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a45ae1004420f2101ad51feec56ae595d}{theta\+Init}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self)}{__init__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a8f569482d8099798494dc38a16589f8f}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a8f569482d8099798494dc38a16589f8f}
+
+
+\subsection{Member Function Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!filter@{filter}}
+\index{filter@{filter}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{filter(self, last\+Y, new\+Y, last\+X, new\+X, last\+Theta, new\+Theta, F\+R\+E\+Q, u\+Instantaneous=0)}{filter(self, lastY, newY, lastX, newX, lastTheta, newTheta, FREQ, uInstantaneous=0)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+filter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lastY, }
+\item[{}]{newY, }
+\item[{}]{lastX, }
+\item[{}]{newX, }
+\item[{}]{last\+Theta, }
+\item[{}]{new\+Theta, }
+\item[{}]{F\+R\+EQ, }
+\item[{}]{u\+Instantaneous = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a770af7ed4ce5ed48fc9db1d42ca0b588}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a770af7ed4ce5ed48fc9db1d42ca0b588}
+
+
+Return the linear and angular velocities estimated from the values of the pose of the robot, the frequency and the linear velocity estimated by TT (which is unreliable). 
+
+
+
+\subsection{Member Data Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!atan2lifter@{atan2lifter}}
+\index{atan2lifter@{atan2lifter}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{atan2lifter}{atan2lifter}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+atan2lifter}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a72fb79f01a2e947721335436d2cfdaa7}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a72fb79f01a2e947721335436d2cfdaa7}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!theta\+Init@{theta\+Init}}
+\index{theta\+Init@{theta\+Init}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{theta\+Init}{thetaInit}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+theta\+Init}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a45ae1004420f2101ad51feec56ae595d}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a45ae1004420f2101ad51feec56ae595d}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!u\+Filtered@{u\+Filtered}}
+\index{u\+Filtered@{u\+Filtered}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{u\+Filtered}{uFiltered}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+u\+Filtered}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a1193cc0d35e56c0758e36ccdea45cfd4}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a1193cc0d35e56c0758e36ccdea45cfd4}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!u\+Filtered\+\_\+prec@{u\+Filtered\+\_\+prec}}
+\index{u\+Filtered\+\_\+prec@{u\+Filtered\+\_\+prec}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{u\+Filtered\+\_\+prec}{uFiltered_prec}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+u\+Filtered\+\_\+prec}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_ab699cd8db314b9845544edcf90efccc7}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_ab699cd8db314b9845544edcf90efccc7}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!u\+Raw@{u\+Raw}}
+\index{u\+Raw@{u\+Raw}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{u\+Raw}{uRaw}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+u\+Raw}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a0f4537c092a3823d6285cffd5e2b825f}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a0f4537c092a3823d6285cffd5e2b825f}
+
+
+u\+Raw \+: linear speed before applying Butterworth 
+
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!u\+Raw\+\_\+prec@{u\+Raw\+\_\+prec}}
+\index{u\+Raw\+\_\+prec@{u\+Raw\+\_\+prec}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{u\+Raw\+\_\+prec}{uRaw_prec}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+u\+Raw\+\_\+prec}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_abadf344eae18ac29ab1b8f2784fef116}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_abadf344eae18ac29ab1b8f2784fef116}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!w\+Brut@{w\+Brut}}
+\index{w\+Brut@{w\+Brut}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{w\+Brut}{wBrut}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+w\+Brut}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a967096c3f7f90d51ee25cabe6153c67c}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a967096c3f7f90d51ee25cabe6153c67c}
+
+
+w\+Brut \+: angular speed before applying Butterworth 
+
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!w\+Filtered@{w\+Filtered}}
+\index{w\+Filtered@{w\+Filtered}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{w\+Filtered}{wFiltered}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+w\+Filtered}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_aa31176200eee925ee48f575d6d5acc9e}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_aa31176200eee925ee48f575d6d5acc9e}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!w\+Filtered\+\_\+prec@{w\+Filtered\+\_\+prec}}
+\index{w\+Filtered\+\_\+prec@{w\+Filtered\+\_\+prec}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{w\+Filtered\+\_\+prec}{wFiltered_prec}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+w\+Filtered\+\_\+prec}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_ad8a64b6be0a7b11ab2626affc4df0955}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_ad8a64b6be0a7b11ab2626affc4df0955}
+\index{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}!w\+Raw\+\_\+prec@{w\+Raw\+\_\+prec}}
+\index{w\+Raw\+\_\+prec@{w\+Raw\+\_\+prec}!cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter@{cmd\+\_\+\+T\+T\+B\+::butterworth\+::\+Butterworth\+Filter}}
+\subsubsection[{\texorpdfstring{w\+Raw\+\_\+prec}{wRaw_prec}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+butterworth.\+Butterworth\+Filter.\+w\+Raw\+\_\+prec}\hypertarget{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a112d92005652f64e47664227b5cf3c73}{}\label{classcmd__TTB_1_1butterworth_1_1ButterworthFilter_a112d92005652f64e47664227b5cf3c73}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{butterworth_8py}{butterworth.\+py}\end{DoxyCompactItemize}

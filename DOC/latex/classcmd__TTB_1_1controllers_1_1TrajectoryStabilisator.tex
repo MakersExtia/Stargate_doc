@@ -1,0 +1,255 @@
+\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator}{}\section{cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator Class Reference}
+\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator}\index{cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator}}
+
+
+Inheritance diagram for cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_ad42379fbbd0ec30bdc425e81fd47611f}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a6eb1c01d0f7628c9c55aba2e1c1a5f87}{consigne\+\_\+xy}, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a8a5025ec66995976f3c7bd6d976cb426}{consigne\+\_\+theta}, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a7aacf24b292c214b7507ed7ff775d9d8}{consigne\+\_\+v}, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a66ceabf25b6fc0f738457520d8a6b72d}{consigne\+\_\+w}, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_aedda44c52c85b3984f4c58b4d6157575}{F\+R\+EQ}, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a82d3c2d639861e91f72560750417920e}{k1}=0, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_af96b6610b96e8a7d036848bf168c2c01}{k2}=0, \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_abe267c474aea918130fd31fdfe818938}{k3}=0)
+\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a7a3a50c500ed52611cfc72a5d1e0804d}{get\+VW} (self, x, y, theta, k)
+\begin{DoxyCompactList}\small\item\em Returns the velocities v and w based on the robot\textquotesingle{}s pose (x,y,theta) \end{DoxyCompactList}\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_aa4adb81d4e63a8d861722a62806638c7}{avoid\+Singularity} (self, theta, k)
+\begin{DoxyCompactList}\small\item\em Having theta=0 (which is not allowed by \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a554b57b36fcb2f9f1d0b87058ed9992e}{get\+Cmd}). \end{DoxyCompactList}\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a9dba372897104d13678ed72114abd7e8}{get\+State} (self, x, y, theta, k)
+\begin{DoxyCompactList}\small\item\em Get the system\textquotesingle{}s state (tracking errors) which is the measured positions minus the reference. \end{DoxyCompactList}\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a554b57b36fcb2f9f1d0b87058ed9992e}{get\+Cmd} (self, x1, x2, x3, k)
+\begin{DoxyCompactList}\small\item\em Computes the first control law (u1, u2) from the system\textquotesingle{}s state (tracking errors) \end{DoxyCompactList}\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a273938caf148ebbb4f720dec76dc3aa2}{get\+Output} (self, x3, u1, u2, k)
+\begin{DoxyCompactList}\small\item\em Computes the second control law (v, w) from the system\textquotesingle{}s state (tracking errors) and the orientation error x3. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a6eb1c01d0f7628c9c55aba2e1c1a5f87}{consigne\+\_\+xy}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a8a5025ec66995976f3c7bd6d976cb426}{consigne\+\_\+theta}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a7aacf24b292c214b7507ed7ff775d9d8}{consigne\+\_\+v}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a66ceabf25b6fc0f738457520d8a6b72d}{consigne\+\_\+w}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_aedda44c52c85b3984f4c58b4d6157575}{F\+R\+EQ}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a82d3c2d639861e91f72560750417920e}{k1}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_af96b6610b96e8a7d036848bf168c2c01}{k2}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_abe267c474aea918130fd31fdfe818938}{k3}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, consigne\+\_\+xy, consigne\+\_\+theta, consigne\+\_\+v, consigne\+\_\+w, F\+R\+E\+Q, k1=0, k2=0, k3=0)}{__init__(self, consigne_xy, consigne_theta, consigne_v, consigne_w, FREQ, k1=0, k2=0, k3=0)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{consigne\+\_\+xy, }
+\item[{}]{consigne\+\_\+theta, }
+\item[{}]{consigne\+\_\+v, }
+\item[{}]{consigne\+\_\+w, }
+\item[{}]{F\+R\+EQ, }
+\item[{}]{k1 = {\ttfamily 0}, }
+\item[{}]{k2 = {\ttfamily 0}, }
+\item[{}]{k3 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_ad42379fbbd0ec30bdc425e81fd47611f}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_ad42379fbbd0ec30bdc425e81fd47611f}
+
+\begin{DoxyParams}{Parameters}
+{\em consigne\+\_\+xy} & Numpy.\+array containing the trajectory\textquotesingle{}s coordinates along X and Y. \\
+\hline
+{\em consigne\+\_\+theta} & Numpy.\+array containing the computed orientation along the trajectory \\
+\hline
+{\em consigne\+\_\+v} & Numpy.\+array containing the reference\textquotesingle{}s linear velocity v \\
+\hline
+{\em consigne\+\_\+w} & Numpy.\+array containing the reference\textquotesingle{}s angular velocity w \\
+\hline
+{\em F\+R\+EQ} & Double \+: rate of the trajectory (and therefore the control law) \\
+\hline
+{\em k1} & Double \+: first gain \\
+\hline
+{\em k2} & Double \+: second gain \\
+\hline
+{\em k3} & Double \+: third gain \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!avoid\+Singularity@{avoid\+Singularity}}
+\index{avoid\+Singularity@{avoid\+Singularity}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{avoid\+Singularity(self, theta, k)}{avoidSingularity(self, theta, k)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+avoid\+Singularity (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{theta, }
+\item[{}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_aa4adb81d4e63a8d861722a62806638c7}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_aa4adb81d4e63a8d861722a62806638c7}
+
+
+Having theta=0 (which is not allowed by \hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a554b57b36fcb2f9f1d0b87058ed9992e}{get\+Cmd}). 
+
+\begin{DoxyWarning}{Warning}
+This isn\textquotesingle{}t supposed to be !!
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & Double \+: measured orientation of the robot \\
+\hline
+{\em k} & Int \+: index of the current point of the trajectory \\
+\hline
+\end{DoxyParams}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!get\+Cmd@{get\+Cmd}}
+\index{get\+Cmd@{get\+Cmd}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{get\+Cmd(self, x1, x2, x3, k)}{getCmd(self, x1, x2, x3, k)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+get\+Cmd (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{x1, }
+\item[{}]{x2, }
+\item[{}]{x3, }
+\item[{}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a554b57b36fcb2f9f1d0b87058ed9992e}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a554b57b36fcb2f9f1d0b87058ed9992e}
+
+
+Computes the first control law (u1, u2) from the system\textquotesingle{}s state (tracking errors) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & Double \+: tracking error of the robot along the x axis \\
+\hline
+{\em x2} & Double \+: tracking error of the robot along the y axis \\
+\hline
+{\em x3} & Double \+: tracking error of the orientation of the robot \\
+\hline
+{\em k} & Int \+: index of the current point of the trajectory \\
+\hline
+\end{DoxyParams}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!get\+Output@{get\+Output}}
+\index{get\+Output@{get\+Output}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{get\+Output(self, x3, u1, u2, k)}{getOutput(self, x3, u1, u2, k)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+get\+Output (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{x3, }
+\item[{}]{u1, }
+\item[{}]{u2, }
+\item[{}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a273938caf148ebbb4f720dec76dc3aa2}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a273938caf148ebbb4f720dec76dc3aa2}
+
+
+Computes the second control law (v, w) from the system\textquotesingle{}s state (tracking errors) and the orientation error x3. 
+
+v is the desired linear velocity and w the angular velocity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x3} & Double \+: tracking error of the orientation of the robot \\
+\hline
+{\em u1} & Double \+: first parameter of the first control law (\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a554b57b36fcb2f9f1d0b87058ed9992e}{get\+Cmd}) \\
+\hline
+{\em u2} & Double \+: second parameter of the first control law (\hyperlink{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a554b57b36fcb2f9f1d0b87058ed9992e}{get\+Cmd}) \\
+\hline
+{\em k} & Int \+: index of the current point of the trajectory \\
+\hline
+\end{DoxyParams}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{get\+State(self, x, y, theta, k)}{getState(self, x, y, theta, k)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+get\+State (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{x, }
+\item[{}]{y, }
+\item[{}]{theta, }
+\item[{}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a9dba372897104d13678ed72114abd7e8}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a9dba372897104d13678ed72114abd7e8}
+
+
+Get the system\textquotesingle{}s state (tracking errors) which is the measured positions minus the reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Double \+: measured position of the robot along the x axis \\
+\hline
+{\em y} & Double \+: measured position of the robot along the y axis \\
+\hline
+{\em theta} & Double \+: measured orientation of the robot \\
+\hline
+{\em k} & Int \+: index of the current point of the trajectory \\
+\hline
+\end{DoxyParams}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!get\+VW@{get\+VW}}
+\index{get\+VW@{get\+VW}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{get\+V\+W(self, x, y, theta, k)}{getVW(self, x, y, theta, k)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+get\+VW (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{x, }
+\item[{}]{y, }
+\item[{}]{theta, }
+\item[{}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a7a3a50c500ed52611cfc72a5d1e0804d}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a7a3a50c500ed52611cfc72a5d1e0804d}
+
+
+Returns the velocities v and w based on the robot\textquotesingle{}s pose (x,y,theta) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Double \+: measured position of the robot along the x axis \\
+\hline
+{\em y} & Double \+: measured position of the robot along the y axis \\
+\hline
+{\em theta} & Double \+: measured orientation of the robot \\
+\hline
+{\em k} & Int \+: index of the current point of the trajectory \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!consigne\+\_\+theta@{consigne\+\_\+theta}}
+\index{consigne\+\_\+theta@{consigne\+\_\+theta}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{consigne\+\_\+theta}{consigne_theta}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+consigne\+\_\+theta}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a8a5025ec66995976f3c7bd6d976cb426}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a8a5025ec66995976f3c7bd6d976cb426}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!consigne\+\_\+v@{consigne\+\_\+v}}
+\index{consigne\+\_\+v@{consigne\+\_\+v}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{consigne\+\_\+v}{consigne_v}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+consigne\+\_\+v}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a7aacf24b292c214b7507ed7ff775d9d8}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a7aacf24b292c214b7507ed7ff775d9d8}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!consigne\+\_\+w@{consigne\+\_\+w}}
+\index{consigne\+\_\+w@{consigne\+\_\+w}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{consigne\+\_\+w}{consigne_w}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+consigne\+\_\+w}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a66ceabf25b6fc0f738457520d8a6b72d}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a66ceabf25b6fc0f738457520d8a6b72d}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!consigne\+\_\+xy@{consigne\+\_\+xy}}
+\index{consigne\+\_\+xy@{consigne\+\_\+xy}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{consigne\+\_\+xy}{consigne_xy}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+consigne\+\_\+xy}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a6eb1c01d0f7628c9c55aba2e1c1a5f87}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a6eb1c01d0f7628c9c55aba2e1c1a5f87}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!F\+R\+EQ@{F\+R\+EQ}}
+\index{F\+R\+EQ@{F\+R\+EQ}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{F\+R\+EQ}{FREQ}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+F\+R\+EQ}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_aedda44c52c85b3984f4c58b4d6157575}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_aedda44c52c85b3984f4c58b4d6157575}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!k1@{k1}}
+\index{k1@{k1}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{k1}{k1}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+k1}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a82d3c2d639861e91f72560750417920e}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_a82d3c2d639861e91f72560750417920e}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!k2@{k2}}
+\index{k2@{k2}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{k2}{k2}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+k2}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_af96b6610b96e8a7d036848bf168c2c01}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_af96b6610b96e8a7d036848bf168c2c01}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}!k3@{k3}}
+\index{k3@{k3}!cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator@{cmd\+\_\+\+T\+T\+B\+::controllers\+::\+Trajectory\+Stabilisator}}
+\subsubsection[{\texorpdfstring{k3}{k3}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+Trajectory\+Stabilisator.\+k3}\hypertarget{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_abe267c474aea918130fd31fdfe818938}{}\label{classcmd__TTB_1_1controllers_1_1TrajectoryStabilisator_abe267c474aea918130fd31fdfe818938}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{controllers_8py}{controllers.\+py}\end{DoxyCompactItemize}

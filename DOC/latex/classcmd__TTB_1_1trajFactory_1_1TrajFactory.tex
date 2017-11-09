@@ -1,0 +1,280 @@
+\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory}{}\section{cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory Class Reference}
+\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory}\index{cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a1cfbf1b87291564fee20895c3eda234f}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{namespacecmd__TTB_1_1trajFactory_a155b2c6da96a917f0ac2ad1b45e68f65}{points}, vel\+Max=\mbox{[}0.\+15, \hyperlink{namespacecmd__TTB_1_1trajFactory_abb2e2587a58c4fc35dd18e79526c3a67}{freq}=10, \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a17391e139222a91451f87e07e96f0952}{inter\+Steps}=100)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ade69855daa93371b1a2a2540de43af2e}{make\+Parametric\+Path} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a0813e84946f5fa7ea8db2eec70fe74ed}{deceleration\+Adapter} (self, arc\+Lengths, new\+Ts, new\+Vs, new\+Ws)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a4760d93eefb0aff891b61e4005e53e32}{start\+Deceleration} (self, iterator, arc\+Lengths, initial\+Arc, new\+Ts, new\+Vs, new\+Ws)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ae79e897f8631e4e1bbf639d5951caec5}{radius} (self, t)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a9587e7e6861ce7150df8e05372f86b26}{findt} (self, s, arc\+Lengths)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a804100550f047f3e036df7839f5e1d72}{k\+Derivative\+Instant} (self, t, degree=1)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a0472b558a80a4fe4dd8106f6a89e6562}{get\+Bezier} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ad8e62bca54b4165eea3c677690c89efc}{get\+Arc\+Lengths} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_adf0c25d8eff9beec92a446c5760461f2}{bezier\+Creator} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a48fe4e9a265feb014636f95a78ef9b5d}{bernstein\+Poly} (self, n, i, t)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_acc57a6b5cfceae963504a58aeab2f64b}{arc\+Calculator} (self, \hyperlink{namespacecmd__TTB_1_1trajFactory_ac955d640aed48051089654bf294a2001}{xvals}, \hyperlink{namespacecmd__TTB_1_1trajFactory_a7a877f7cdb271eb3276d034ab078d600}{yvals})
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_acfd20cd19f21c36b2fd7984248e1cf67}{arc\+Estimation} (self, prevX, prevY, currX, currY)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a40ca5d2425c4d55a179c6baca0bd0f8a}{curve\+Reparam} (self, arc\+Lengths, \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a17391e139222a91451f87e07e96f0952}{inter\+Steps}=100)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a967b160b18d8cba7b7abc1e18b12a097}{reparam} (self, new\+Param, arc\+Lengths)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a5ad86ca0a0a192cefe4f99ccb721a1f3}{closest\+Value\+Min} (self, lengths, target)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a5e4439aaa52686151386178e9a614ae8}{k\+Derivative} (self, degree=1)
+\item 
+def \hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_af1baefcdfad72a13172064443b29e8dc}{random\+Points\+Creator} (\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a3a21023c80037375f39420be4c5d2097}{order})
+\begin{DoxyCompactList}\small\item\em Creates random points \+: used only for test and debug. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a6dd492eb38a8d0551974c7c03ccda61e}{x\+Points}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ad94e5ab21d61d2abdb570c2ac00cfd34}{y\+Points}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a17391e139222a91451f87e07e96f0952}{inter\+Steps}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a663f339258fb25b0f2648ea059798752}{deltaT}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a1155273084f5a5639af322d21467c44e}{v\+Max}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_af2a193ef91148ba2d63378e55869b214}{acc}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a236b5b0b56949f54b45a6f4fb7ae1153}{omega\+Max}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_aa2eb324765a12b2671934281358cd0ec}{traj}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a37b4adbe457a79a1cffd38b5022fbc3b}{y\+Vals}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a3a21023c80037375f39420be4c5d2097}{order}
+\item 
+\hyperlink{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ab64f2aea61f026ee7c20bd223599dd35}{ctrl\+Reparam}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, points, vel\+Max=[0.\+15, freq=10, inter\+Steps=100)}{__init__(self, points, velMax=[0.15, freq=10, interSteps=100)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{points, }
+\item[{}]{vel\+Max = {\ttfamily \mbox{[}0.15}, }
+\item[{}]{freq = {\ttfamily 10}, }
+\item[{}]{inter\+Steps = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a1cfbf1b87291564fee20895c3eda234f}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a1cfbf1b87291564fee20895c3eda234f}
+
+
+\subsection{Member Function Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!arc\+Calculator@{arc\+Calculator}}
+\index{arc\+Calculator@{arc\+Calculator}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{arc\+Calculator(self, xvals, yvals)}{arcCalculator(self, xvals, yvals)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+arc\+Calculator (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{xvals, }
+\item[{}]{yvals}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_acc57a6b5cfceae963504a58aeab2f64b}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_acc57a6b5cfceae963504a58aeab2f64b}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!arc\+Estimation@{arc\+Estimation}}
+\index{arc\+Estimation@{arc\+Estimation}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{arc\+Estimation(self, prev\+X, prev\+Y, curr\+X, curr\+Y)}{arcEstimation(self, prevX, prevY, currX, currY)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+arc\+Estimation (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{prevX, }
+\item[{}]{prevY, }
+\item[{}]{currX, }
+\item[{}]{currY}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_acfd20cd19f21c36b2fd7984248e1cf67}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_acfd20cd19f21c36b2fd7984248e1cf67}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!bernstein\+Poly@{bernstein\+Poly}}
+\index{bernstein\+Poly@{bernstein\+Poly}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{bernstein\+Poly(self, n, i, t)}{bernsteinPoly(self, n, i, t)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+bernstein\+Poly (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n, }
+\item[{}]{i, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a48fe4e9a265feb014636f95a78ef9b5d}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a48fe4e9a265feb014636f95a78ef9b5d}
+\begin{DoxyVerb}The Bernstein polynomial of n, i as a function of t
+\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!bezier\+Creator@{bezier\+Creator}}
+\index{bezier\+Creator@{bezier\+Creator}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{bezier\+Creator(self)}{bezierCreator(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+bezier\+Creator (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_adf0c25d8eff9beec92a446c5760461f2}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_adf0c25d8eff9beec92a446c5760461f2}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!closest\+Value\+Min@{closest\+Value\+Min}}
+\index{closest\+Value\+Min@{closest\+Value\+Min}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{closest\+Value\+Min(self, lengths, target)}{closestValueMin(self, lengths, target)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+closest\+Value\+Min (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lengths, }
+\item[{}]{target}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a5ad86ca0a0a192cefe4f99ccb721a1f3}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a5ad86ca0a0a192cefe4f99ccb721a1f3}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!curve\+Reparam@{curve\+Reparam}}
+\index{curve\+Reparam@{curve\+Reparam}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{curve\+Reparam(self, arc\+Lengths, inter\+Steps=100)}{curveReparam(self, arcLengths, interSteps=100)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+curve\+Reparam (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{arc\+Lengths, }
+\item[{}]{inter\+Steps = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a40ca5d2425c4d55a179c6baca0bd0f8a}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a40ca5d2425c4d55a179c6baca0bd0f8a}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!deceleration\+Adapter@{deceleration\+Adapter}}
+\index{deceleration\+Adapter@{deceleration\+Adapter}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{deceleration\+Adapter(self, arc\+Lengths, new\+Ts, new\+Vs, new\+Ws)}{decelerationAdapter(self, arcLengths, newTs, newVs, newWs)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+deceleration\+Adapter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{arc\+Lengths, }
+\item[{}]{new\+Ts, }
+\item[{}]{new\+Vs, }
+\item[{}]{new\+Ws}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a0813e84946f5fa7ea8db2eec70fe74ed}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a0813e84946f5fa7ea8db2eec70fe74ed}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!findt@{findt}}
+\index{findt@{findt}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{findt(self, s, arc\+Lengths)}{findt(self, s, arcLengths)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+findt (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{s, }
+\item[{}]{arc\+Lengths}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a9587e7e6861ce7150df8e05372f86b26}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a9587e7e6861ce7150df8e05372f86b26}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!get\+Arc\+Lengths@{get\+Arc\+Lengths}}
+\index{get\+Arc\+Lengths@{get\+Arc\+Lengths}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{get\+Arc\+Lengths(self)}{getArcLengths(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+get\+Arc\+Lengths (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ad8e62bca54b4165eea3c677690c89efc}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ad8e62bca54b4165eea3c677690c89efc}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!get\+Bezier@{get\+Bezier}}
+\index{get\+Bezier@{get\+Bezier}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{get\+Bezier(self)}{getBezier(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+get\+Bezier (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a0472b558a80a4fe4dd8106f6a89e6562}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a0472b558a80a4fe4dd8106f6a89e6562}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!k\+Derivative@{k\+Derivative}}
+\index{k\+Derivative@{k\+Derivative}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{k\+Derivative(self, degree=1)}{kDerivative(self, degree=1)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+k\+Derivative (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{degree = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a5e4439aaa52686151386178e9a614ae8}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a5e4439aaa52686151386178e9a614ae8}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!k\+Derivative\+Instant@{k\+Derivative\+Instant}}
+\index{k\+Derivative\+Instant@{k\+Derivative\+Instant}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{k\+Derivative\+Instant(self, t, degree=1)}{kDerivativeInstant(self, t, degree=1)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+k\+Derivative\+Instant (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t, }
+\item[{}]{degree = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a804100550f047f3e036df7839f5e1d72}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a804100550f047f3e036df7839f5e1d72}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!make\+Parametric\+Path@{make\+Parametric\+Path}}
+\index{make\+Parametric\+Path@{make\+Parametric\+Path}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{make\+Parametric\+Path(self)}{makeParametricPath(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+make\+Parametric\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ade69855daa93371b1a2a2540de43af2e}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ade69855daa93371b1a2a2540de43af2e}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!radius@{radius}}
+\index{radius@{radius}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{radius(self, t)}{radius(self, t)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+radius (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ae79e897f8631e4e1bbf639d5951caec5}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ae79e897f8631e4e1bbf639d5951caec5}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!random\+Points\+Creator@{random\+Points\+Creator}}
+\index{random\+Points\+Creator@{random\+Points\+Creator}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{random\+Points\+Creator(order)}{randomPointsCreator(order)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+random\+Points\+Creator (
+\begin{DoxyParamCaption}
+\item[{}]{order}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_af1baefcdfad72a13172064443b29e8dc}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_af1baefcdfad72a13172064443b29e8dc}
+
+
+Creates random points \+: used only for test and debug. 
+
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!reparam@{reparam}}
+\index{reparam@{reparam}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{reparam(self, new\+Param, arc\+Lengths)}{reparam(self, newParam, arcLengths)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+reparam (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{new\+Param, }
+\item[{}]{arc\+Lengths}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a967b160b18d8cba7b7abc1e18b12a097}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a967b160b18d8cba7b7abc1e18b12a097}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!start\+Deceleration@{start\+Deceleration}}
+\index{start\+Deceleration@{start\+Deceleration}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{start\+Deceleration(self, iterator, arc\+Lengths, initial\+Arc, new\+Ts, new\+Vs, new\+Ws)}{startDeceleration(self, iterator, arcLengths, initialArc, newTs, newVs, newWs)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+start\+Deceleration (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{iterator, }
+\item[{}]{arc\+Lengths, }
+\item[{}]{initial\+Arc, }
+\item[{}]{new\+Ts, }
+\item[{}]{new\+Vs, }
+\item[{}]{new\+Ws}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a4760d93eefb0aff891b61e4005e53e32}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a4760d93eefb0aff891b61e4005e53e32}
+
+
+\subsection{Member Data Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!acc@{acc}}
+\index{acc@{acc}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{acc}{acc}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+acc}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_af2a193ef91148ba2d63378e55869b214}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_af2a193ef91148ba2d63378e55869b214}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!ctrl\+Reparam@{ctrl\+Reparam}}
+\index{ctrl\+Reparam@{ctrl\+Reparam}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{ctrl\+Reparam}{ctrlReparam}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+ctrl\+Reparam}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ab64f2aea61f026ee7c20bd223599dd35}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ab64f2aea61f026ee7c20bd223599dd35}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!deltaT@{deltaT}}
+\index{deltaT@{deltaT}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{deltaT}{deltaT}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+deltaT}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a663f339258fb25b0f2648ea059798752}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a663f339258fb25b0f2648ea059798752}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!inter\+Steps@{inter\+Steps}}
+\index{inter\+Steps@{inter\+Steps}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{inter\+Steps}{interSteps}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+inter\+Steps}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a17391e139222a91451f87e07e96f0952}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a17391e139222a91451f87e07e96f0952}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!omega\+Max@{omega\+Max}}
+\index{omega\+Max@{omega\+Max}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{omega\+Max}{omegaMax}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+omega\+Max}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a236b5b0b56949f54b45a6f4fb7ae1153}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a236b5b0b56949f54b45a6f4fb7ae1153}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!order@{order}}
+\index{order@{order}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{order}{order}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+order}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a3a21023c80037375f39420be4c5d2097}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a3a21023c80037375f39420be4c5d2097}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!traj@{traj}}
+\index{traj@{traj}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{traj}{traj}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+traj}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_aa2eb324765a12b2671934281358cd0ec}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_aa2eb324765a12b2671934281358cd0ec}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!v\+Max@{v\+Max}}
+\index{v\+Max@{v\+Max}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{v\+Max}{vMax}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+v\+Max}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a1155273084f5a5639af322d21467c44e}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a1155273084f5a5639af322d21467c44e}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!x\+Points@{x\+Points}}
+\index{x\+Points@{x\+Points}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{x\+Points}{xPoints}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+x\+Points}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a6dd492eb38a8d0551974c7c03ccda61e}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a6dd492eb38a8d0551974c7c03ccda61e}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!y\+Points@{y\+Points}}
+\index{y\+Points@{y\+Points}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{y\+Points}{yPoints}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+y\+Points}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ad94e5ab21d61d2abdb570c2ac00cfd34}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_ad94e5ab21d61d2abdb570c2ac00cfd34}
+\index{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}!y\+Vals@{y\+Vals}}
+\index{y\+Vals@{y\+Vals}!cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory@{cmd\+\_\+\+T\+T\+B\+::traj\+Factory\+::\+Traj\+Factory}}
+\subsubsection[{\texorpdfstring{y\+Vals}{yVals}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+traj\+Factory.\+Traj\+Factory.\+y\+Vals}\hypertarget{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a37b4adbe457a79a1cffd38b5022fbc3b}{}\label{classcmd__TTB_1_1trajFactory_1_1TrajFactory_a37b4adbe457a79a1cffd38b5022fbc3b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{trajFactory_8py}{traj\+Factory.\+py}\end{DoxyCompactItemize}

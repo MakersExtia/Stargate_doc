@@ -1,0 +1,138 @@
+\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID}{}\section{cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+ID Class Reference}
+\label{classcmd__TTB_1_1controllers_1_1turtlebotPID}\index{cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+ID}}
+
+
+Inheritance diagram for cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+ID\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classcmd__TTB_1_1controllers_1_1turtlebotPID__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+ID\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classcmd__TTB_1_1controllers_1_1turtlebotPID__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a3360909164559c841e600896014a60b4}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a46f9e76ece4ade360926bdc5250cdfc3}{kp}, \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_aaf815b510701e946034699cf9039b961}{ki}, \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a33fb24bec3035fd064ce48c58420fde8}{kd}, \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_ab20832f88555ed864be4e1f3f37ce2d7}{F\+R\+EQ}, \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a9eedbb29702ca64a002d8b13a79f515b}{u\+Max}=1)
+\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_acfb641d74e87200c6a6832bfb22de252}{getU} (self, \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_ac4c729835bb914598eefd16a3278ce14}{e})
+\begin{DoxyCompactList}\small\item\em Computes the new control state u=(v,w) from the raw one e. \end{DoxyCompactList}\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a9a16fe7aab46c6cbc8e31ee505d780d9}{Add\+U\+To\+The\+List} (self, Output)
+\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_adf5ae9d1784ea20c14c626039b4e5136}{Add\+R\+To\+The\+List} (self, Input)
+\item 
+def \hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_aae3de1d737681be0f420a3ed8f2b63e8}{Output\+Saturation} (self, u)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a9eedbb29702ca64a002d8b13a79f515b}{u\+Max}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a46f9e76ece4ade360926bdc5250cdfc3}{kp}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_aaf815b510701e946034699cf9039b961}{ki}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_a33fb24bec3035fd064ce48c58420fde8}{kd}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_ab20832f88555ed864be4e1f3f37ce2d7}{F\+R\+EQ}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_abc36f71fca7350bacae66d199d9cc18f}{U}
+\item 
+\hyperlink{classcmd__TTB_1_1controllers_1_1turtlebotPID_ac4c729835bb914598eefd16a3278ce14}{e}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, kp, ki, kd, F\+R\+E\+Q, u\+Max=1)}{__init__(self, kp, ki, kd, FREQ, uMax=1)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{kp, }
+\item[{}]{ki, }
+\item[{}]{kd, }
+\item[{}]{F\+R\+EQ, }
+\item[{}]{u\+Max = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_a3360909164559c841e600896014a60b4}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_a3360909164559c841e600896014a60b4}
+
+
+\subsection{Member Function Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!Add\+R\+To\+The\+List@{Add\+R\+To\+The\+List}}
+\index{Add\+R\+To\+The\+List@{Add\+R\+To\+The\+List}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{Add\+R\+To\+The\+List(self, Input)}{AddRToTheList(self, Input)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+Add\+R\+To\+The\+List (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Input}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_adf5ae9d1784ea20c14c626039b4e5136}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_adf5ae9d1784ea20c14c626039b4e5136}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!Add\+U\+To\+The\+List@{Add\+U\+To\+The\+List}}
+\index{Add\+U\+To\+The\+List@{Add\+U\+To\+The\+List}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{Add\+U\+To\+The\+List(self, Output)}{AddUToTheList(self, Output)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+Add\+U\+To\+The\+List (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Output}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_a9a16fe7aab46c6cbc8e31ee505d780d9}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_a9a16fe7aab46c6cbc8e31ee505d780d9}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!getU@{getU}}
+\index{getU@{getU}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{get\+U(self, e)}{getU(self, e)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+getU (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_acfb641d74e87200c6a6832bfb22de252}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_acfb641d74e87200c6a6832bfb22de252}
+
+
+Computes the new control state u=(v,w) from the raw one e. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Numpy.\+array \+: raw velocities (before applying the P\+ID). \\
+\hline
+\end{DoxyParams}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!Output\+Saturation@{Output\+Saturation}}
+\index{Output\+Saturation@{Output\+Saturation}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{Output\+Saturation(self, u)}{OutputSaturation(self, u)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+Output\+Saturation (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{u}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_aae3de1d737681be0f420a3ed8f2b63e8}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_aae3de1d737681be0f420a3ed8f2b63e8}
+
+
+\subsection{Member Data Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!e@{e}}
+\index{e@{e}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{e}{e}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+e}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_ac4c729835bb914598eefd16a3278ce14}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_ac4c729835bb914598eefd16a3278ce14}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!F\+R\+EQ@{F\+R\+EQ}}
+\index{F\+R\+EQ@{F\+R\+EQ}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{F\+R\+EQ}{FREQ}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+F\+R\+EQ}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_ab20832f88555ed864be4e1f3f37ce2d7}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_ab20832f88555ed864be4e1f3f37ce2d7}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!kd@{kd}}
+\index{kd@{kd}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{kd}{kd}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+kd}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_a33fb24bec3035fd064ce48c58420fde8}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_a33fb24bec3035fd064ce48c58420fde8}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!ki@{ki}}
+\index{ki@{ki}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{ki}{ki}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+ki}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_aaf815b510701e946034699cf9039b961}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_aaf815b510701e946034699cf9039b961}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!kp@{kp}}
+\index{kp@{kp}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{kp}{kp}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+kp}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_a46f9e76ece4ade360926bdc5250cdfc3}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_a46f9e76ece4ade360926bdc5250cdfc3}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!U@{U}}
+\index{U@{U}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{U}{U}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+U}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_abc36f71fca7350bacae66d199d9cc18f}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_abc36f71fca7350bacae66d199d9cc18f}
+\index{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}!u\+Max@{u\+Max}}
+\index{u\+Max@{u\+Max}!cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID@{cmd\+\_\+\+T\+T\+B\+::controllers\+::turtlebot\+P\+ID}}
+\subsubsection[{\texorpdfstring{u\+Max}{uMax}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+controllers.\+turtlebot\+P\+I\+D.\+u\+Max}\hypertarget{classcmd__TTB_1_1controllers_1_1turtlebotPID_a9eedbb29702ca64a002d8b13a79f515b}{}\label{classcmd__TTB_1_1controllers_1_1turtlebotPID_a9eedbb29702ca64a002d8b13a79f515b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{controllers_8py}{controllers.\+py}\end{DoxyCompactItemize}

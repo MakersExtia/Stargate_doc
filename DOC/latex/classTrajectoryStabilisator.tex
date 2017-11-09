@@ -1,0 +1,20 @@
+\hypertarget{classTrajectoryStabilisator}{}\section{Trajectory\+Stabilisator Class Reference}
+\label{classTrajectoryStabilisator}\index{Trajectory\+Stabilisator@{Trajectory\+Stabilisator}}
+
+
+Control law that computes the desired velocities based on the trajectory (implemented by Marc Leyrat).  
+
+
+
+
+\subsection{Detailed Description}
+Control law that computes the desired velocities based on the trajectory (implemented by Marc Leyrat). 
+
+The control law is based on {\itshape }\{Bernard Bayle\textquotesingle{}s\} lessons on mobile robotics. They are available on the \href{http://eavr.u-strasbg.fr/~bernard/education/3a_robmob/3a_robmob.html}{\tt website of eavr}. This control law is based on a state feedback stabilizing admissible movements while controling the orientation of the robot. \begin{DoxyWarning}{Warning}
+This control law is kinda obscur to me (G\+PA) \+: this class must be reviewed. Two control laws are computed \+: the first one is (u1, u2) and is only based on the system\textquotesingle{}s state. The second (v1, v2) is computed using the first control law and the robot\textquotesingle{}s orientation. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{controllers_8py}{controllers.\+py}\end{DoxyCompactItemize}

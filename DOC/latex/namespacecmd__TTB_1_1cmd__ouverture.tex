@@ -1,0 +1,90 @@
+\hypertarget{namespacecmd__TTB_1_1cmd__ouverture}{}\section{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture Namespace Reference}
+\label{namespacecmd__TTB_1_1cmd__ouverture}\index{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a69046dc4c4b699caef9e459f6620a389}{handle\+Navigation} (req)
+\begin{DoxyCompactList}\small\item\em Main function of the navigation, it computes the trajectory using \hyperlink{classPointCreator}{Point\+Creator} and \hyperlink{classTrajFactory}{Traj\+Factory}, then launches \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a265af166b80f6b0fd2414926197bd440}{follow\+Trajectory} that control the robot to follow it. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a265af166b80f6b0fd2414926197bd440}{follow\+Trajectory} (trajectoire\+\_\+dans\+\_\+\+Rr, req, c\+Door, ttb\+Pose, initiale\+Rotation)
+\begin{DoxyCompactList}\small\item\em Computes the controllers and launch the control law to follow the desired trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a77e047b8c9fe806c29d099b045513d1e}{anonymous}
+\item 
+int \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_acccb0c5132d862843c65fc361ebbc8f4}{F\+R\+E\+Q\+U\+E\+N\+CE} = 10
+\begin{DoxyCompactList}\small\item\em Sample frequence of the robot. \end{DoxyCompactList}\item 
+list \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_af294464cb92aea691b05f1097a4ea28d}{vel\+Max} = \mbox{[}0.\+25,0.\+2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Maximum velocities of the robot (linear in \mbox{[}m\mbox{]} then angular \mbox{[}rad\mbox{]}) \+: mbase values are \mbox{[}0.\+25 m/s, 0.\+1 rad/s\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a24119bb105d758e611e887c6d4c2a2b1}{listener} = \hyperlink{classcmd__TTB_1_1rosCom_1_1TurtlebotListener}{ros\+Com.\+Turtlebot\+Listener}(\char`\"{}/odom\char`\"{},F\+R\+E\+Q\+U\+E\+N\+CE)
+\begin{DoxyCompactList}\small\item\em Listener node from \hyperlink{namespacecmd__TTB_1_1rosCom}{ros\+Com}. \end{DoxyCompactList}\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a453ff2743ee8d9e0d8a9827f06ad3a4a}{publisher} = \hyperlink{classcmd__TTB_1_1rosCom_1_1TurtlebotPublisher}{ros\+Com.\+Turtlebot\+Publisher}(\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_acccb0c5132d862843c65fc361ebbc8f4}{F\+R\+E\+Q\+U\+E\+N\+CE})
+\begin{DoxyCompactList}\small\item\em Publisher node from \hyperlink{namespacecmd__TTB_1_1rosCom}{ros\+Com}. \end{DoxyCompactList}\item 
+\hyperlink{namespacecmd__TTB_1_1cmd__ouverture_ae3d69e9c63df8aea84f2ae92f853d24f}{service} = rospy.\+Service(\textquotesingle{}navigation\+T\+TB\textquotesingle{}, navigation\+T\+TB, \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a69046dc4c4b699caef9e459f6620a389}{handle\+Navigation})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!follow\+Trajectory@{follow\+Trajectory}}
+\index{follow\+Trajectory@{follow\+Trajectory}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{follow\+Trajectory(trajectoire\+\_\+dans\+\_\+\+Rr, req, c\+Door, ttb\+Pose, initiale\+Rotation)}{followTrajectory(trajectoire_dans_Rr, req, cDoor, ttbPose, initialeRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+follow\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{}]{trajectoire\+\_\+dans\+\_\+\+Rr, }
+\item[{}]{req, }
+\item[{}]{c\+Door, }
+\item[{}]{ttb\+Pose, }
+\item[{}]{initiale\+Rotation}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_a265af166b80f6b0fd2414926197bd440}{}\label{namespacecmd__TTB_1_1cmd__ouverture_a265af166b80f6b0fd2414926197bd440}
+
+
+Computes the controllers and launch the control law to follow the desired trajectory. 
+
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!handle\+Navigation@{handle\+Navigation}}
+\index{handle\+Navigation@{handle\+Navigation}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{handle\+Navigation(req)}{handleNavigation(req)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+handle\+Navigation (
+\begin{DoxyParamCaption}
+\item[{}]{req}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_a69046dc4c4b699caef9e459f6620a389}{}\label{namespacecmd__TTB_1_1cmd__ouverture_a69046dc4c4b699caef9e459f6620a389}
+
+
+Main function of the navigation, it computes the trajectory using \hyperlink{classPointCreator}{Point\+Creator} and \hyperlink{classTrajFactory}{Traj\+Factory}, then launches \hyperlink{namespacecmd__TTB_1_1cmd__ouverture_a265af166b80f6b0fd2414926197bd440}{follow\+Trajectory} that control the robot to follow it. 
+
+
+
+\subsection{Variable Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!anonymous@{anonymous}}
+\index{anonymous@{anonymous}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{anonymous}{anonymous}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+anonymous}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_a77e047b8c9fe806c29d099b045513d1e}{}\label{namespacecmd__TTB_1_1cmd__ouverture_a77e047b8c9fe806c29d099b045513d1e}
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!F\+R\+E\+Q\+U\+E\+N\+CE@{F\+R\+E\+Q\+U\+E\+N\+CE}}
+\index{F\+R\+E\+Q\+U\+E\+N\+CE@{F\+R\+E\+Q\+U\+E\+N\+CE}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{F\+R\+E\+Q\+U\+E\+N\+CE}{FREQUENCE}}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+F\+R\+E\+Q\+U\+E\+N\+CE = 10}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_acccb0c5132d862843c65fc361ebbc8f4}{}\label{namespacecmd__TTB_1_1cmd__ouverture_acccb0c5132d862843c65fc361ebbc8f4}
+
+
+Sample frequence of the robot. 
+
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!listener@{listener}}
+\index{listener@{listener}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{listener}{listener}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+listener = {\bf ros\+Com.\+Turtlebot\+Listener}(\char`\"{}/odom\char`\"{},F\+R\+E\+Q\+U\+E\+N\+CE)}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_a24119bb105d758e611e887c6d4c2a2b1}{}\label{namespacecmd__TTB_1_1cmd__ouverture_a24119bb105d758e611e887c6d4c2a2b1}
+
+
+Listener node from \hyperlink{namespacecmd__TTB_1_1rosCom}{ros\+Com}. 
+
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!publisher@{publisher}}
+\index{publisher@{publisher}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{publisher}{publisher}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+publisher = {\bf ros\+Com.\+Turtlebot\+Publisher}({\bf F\+R\+E\+Q\+U\+E\+N\+CE})}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_a453ff2743ee8d9e0d8a9827f06ad3a4a}{}\label{namespacecmd__TTB_1_1cmd__ouverture_a453ff2743ee8d9e0d8a9827f06ad3a4a}
+
+
+Publisher node from \hyperlink{namespacecmd__TTB_1_1rosCom}{ros\+Com}. 
+
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!service@{service}}
+\index{service@{service}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{service}{service}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+service = rospy.\+Service(\textquotesingle{}navigation\+T\+TB\textquotesingle{}, navigation\+T\+TB, {\bf handle\+Navigation})}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_ae3d69e9c63df8aea84f2ae92f853d24f}{}\label{namespacecmd__TTB_1_1cmd__ouverture_ae3d69e9c63df8aea84f2ae92f853d24f}
+\index{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}!vel\+Max@{vel\+Max}}
+\index{vel\+Max@{vel\+Max}!cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture@{cmd\+\_\+\+T\+T\+B\+::cmd\+\_\+ouverture}}
+\subsubsection[{\texorpdfstring{vel\+Max}{velMax}}]{\setlength{\rightskip}{0pt plus 5cm}list cmd\+\_\+\+T\+T\+B.\+cmd\+\_\+ouverture.\+vel\+Max = \mbox{[}0.\+25,0.\+2\mbox{]}}\hypertarget{namespacecmd__TTB_1_1cmd__ouverture_af294464cb92aea691b05f1097a4ea28d}{}\label{namespacecmd__TTB_1_1cmd__ouverture_af294464cb92aea691b05f1097a4ea28d}
+
+
+Maximum velocities of the robot (linear in \mbox{[}m\mbox{]} then angular \mbox{[}rad\mbox{]}) \+: mbase values are \mbox{[}0.\+25 m/s, 0.\+1 rad/s\mbox{]}. 
+

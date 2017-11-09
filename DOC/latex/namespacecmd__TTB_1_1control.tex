@@ -1,0 +1,79 @@
+\hypertarget{namespacecmd__TTB_1_1control}{}\section{cmd\+\_\+\+T\+T\+B.\+control Namespace Reference}
+\label{namespacecmd__TTB_1_1control}\index{cmd\+\_\+\+T\+T\+B.\+control@{cmd\+\_\+\+T\+T\+B.\+control}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecmd__TTB_1_1control_af6d33a997ba2c559550a999784957817}{make\+References} (trajectory, ttb\+Pose, rotation\+Angle, F\+R\+EQ, vel\+Max)
+\begin{DoxyCompactList}\small\item\em From the desired trajectory, computes the desired speeds and orientation of the robot. \end{DoxyCompactList}\item 
+def \hyperlink{namespacecmd__TTB_1_1control_a3e268ec97147559f27deea1afe830d82}{command\+Robot} (traj\+Size, turtlebot, C1, C2v, C2w, listener, publisher, traj\+Step)
+\begin{DoxyCompactList}\small\item\em Control law of the robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::control@{cmd\+\_\+\+T\+T\+B\+::control}!command\+Robot@{command\+Robot}}
+\index{command\+Robot@{command\+Robot}!cmd\+\_\+\+T\+T\+B\+::control@{cmd\+\_\+\+T\+T\+B\+::control}}
+\subsubsection[{\texorpdfstring{command\+Robot(traj\+Size, turtlebot, C1, C2v, C2w, listener, publisher, traj\+Step)}{commandRobot(trajSize, turtlebot, C1, C2v, C2w, listener, publisher, trajStep)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+control.\+command\+Robot (
+\begin{DoxyParamCaption}
+\item[{}]{traj\+Size, }
+\item[{}]{turtlebot, }
+\item[{}]{C1, }
+\item[{}]{C2v, }
+\item[{}]{C2w, }
+\item[{}]{listener, }
+\item[{}]{publisher, }
+\item[{}]{traj\+Step}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacecmd__TTB_1_1control_a3e268ec97147559f27deea1afe830d82}{}\label{namespacecmd__TTB_1_1control_a3e268ec97147559f27deea1afe830d82}
+
+
+Control law of the robot. 
+
+The function send\+Command from the publisher is already sent at the correct rate, therefore this function just send the velocities contained in the controller one by one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em traj\+Size} & Number of points of the trajectory \\
+\hline
+{\em turtlebot} & \hyperlink{classDataGatherer}{Data\+Gatherer} of the T\+TB \\
+\hline
+{\em C1} & \hyperlink{classTrajectoryStabilisator}{Trajectory\+Stabilisator} from \hyperlink{namespacecmd__TTB_1_1controllers}{controllers} \\
+\hline
+{\em C2v} & Correcteur\+P\+ID from \hyperlink{namespacecmd__TTB_1_1controllers}{controllers} \\
+\hline
+{\em C2v} & Correcteur\+P\+ID from \hyperlink{namespacecmd__TTB_1_1controllers}{controllers} \\
+\hline
+{\em listener} & \hyperlink{classTurtlebotListener}{Turtlebot\+Listener} that allows to read values from T\+TB \\
+\hline
+{\em publisher} & \hyperlink{classTurtlebotPublisher}{Turtlebot\+Publisher} that allows to send values to T\+TB \\
+\hline
+{\em traj\+Step} & Step of the trajectory, this is only used wen the robot must move backwards \\
+\hline
+\end{DoxyParams}
+\index{cmd\+\_\+\+T\+T\+B\+::control@{cmd\+\_\+\+T\+T\+B\+::control}!make\+References@{make\+References}}
+\index{make\+References@{make\+References}!cmd\+\_\+\+T\+T\+B\+::control@{cmd\+\_\+\+T\+T\+B\+::control}}
+\subsubsection[{\texorpdfstring{make\+References(trajectory, ttb\+Pose, rotation\+Angle, F\+R\+E\+Q, vel\+Max)}{makeReferences(trajectory, ttbPose, rotationAngle, FREQ, velMax)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+control.\+make\+References (
+\begin{DoxyParamCaption}
+\item[{}]{trajectory, }
+\item[{}]{ttb\+Pose, }
+\item[{}]{rotation\+Angle, }
+\item[{}]{F\+R\+EQ, }
+\item[{}]{vel\+Max}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacecmd__TTB_1_1control_af6d33a997ba2c559550a999784957817}{}\label{namespacecmd__TTB_1_1control_af6d33a997ba2c559550a999784957817}
+
+
+From the desired trajectory, computes the desired speeds and orientation of the robot. 
+
+Those values are used as the {\itshape reference}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory} & Numpy.\+array \+: trajectory from which the function has to create the reference. \\
+\hline
+{\em ttb\+Pose} & Pose2D \+: initial pose of the robot. \\
+\hline
+{\em F\+R\+EQ} & Double \+: Rate of the control law. \\
+\hline
+{\em vel\+Max} & Numpy.\+array \+: maximum linear and angular accelerations \\
+\hline
+\end{DoxyParams}

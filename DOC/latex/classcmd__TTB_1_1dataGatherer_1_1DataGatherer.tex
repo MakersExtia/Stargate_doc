@@ -1,0 +1,268 @@
+\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer}{}\section{cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer Class Reference}
+\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer}\index{cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_acbea9abbb037555264b3c5d326560670}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, ttb\+Pose, vitesse\+Lineaire\+En\+Commande0, vitesse\+Angulaire\+En\+Commande0, F\+R\+E\+Q\+U\+E\+N\+CE)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_aa9c1979d72538a306c22fb573a0076b7}{new\+Command} (self, vitesse\+Lineaire\+En\+Commanden, vitesse\+Angulaire\+En\+Commanden)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a22be32d8a6818d2bd0d0cfcc06d2d58f}{new\+Pos} (self, newX, newY, new\+Theta, vitesse\+Lineaire\+Instant=0)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a2bf0a24ac3fc5a9a76bc1eefebf31334}{get\+InstantV} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a875c925135b3f187974f15a322f692aa}{get\+InstantW} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a1a6ea334eab99d499f23e05b68af46c1}{v} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_ae41c1980d73278b1d973713988729b9d}{w} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_adad43343ec9a615148fd26377eabc3b8}{to\+\_\+percent} (self, \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a3b8b2b639cad9c1192ef10efa68f2b51}{y}, position)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a7fd8d77061ff08059ba8deea2d184d93}{save\+Data} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a55e8ac388f6a9e4ad794b8561559c52d}{Erreur} (self, consigne\+\_\+xy)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a90a816bc1b190fda1e557c187eecb2a1}{errase} (self)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a93a58d2eb75f586e0747278409fb8ef6}{plot} (self, v\+Reference, w\+Reference, consigne\+\_\+xy=None, consigne\+\_\+theta=0, porte=None)
+\item 
+def \hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_afe246ad25d224494702fcc6eaddf57fe}{plot\+Trajectory} (self, porte, position\+\_\+du\+\_\+repere)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a088d7c0901296ea4bca154bab6c76aa9}{x}
+\begin{DoxyCompactList}\small\item\em ---Initialisation de la position du robot mobile en x,y,theta \end{DoxyCompactList}\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a3b8b2b639cad9c1192ef10efa68f2b51}{y}
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a5d41f95d517db30b08d462522c3d973a}{vitesse\+Lineaire}
+\begin{DoxyCompactList}\small\item\em ---Initialisation des vitesses angulaires et lineaires, ces vitesses ne sont pas a modifier directement, elles sont recalculuee a chaque nouvelle pose \end{DoxyCompactList}\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_afc9fa9a763fe0ff962f1fc9aa8e33e33}{vitesse\+Angulaire}
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a096d1a4edcb1a9189ebfbea80cb646b5}{B\+W\+Filter}
+\begin{DoxyCompactList}\small\item\em ---Initialisation du filtre de butterworth (estimateur des vitesses) \end{DoxyCompactList}\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a92c6e630cfff49229d514a0ea1a26ce1}{vitesse\+Lineaire\+En\+Commande}
+\begin{DoxyCompactList}\small\item\em ---Initialisation des vitesses en commandes \end{DoxyCompactList}\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_adf0b4f8826e0178d2a8fa681673f9284}{vitesse\+Angulaire\+En\+Commande}
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a402999c8fcfdd46884f1afd92b3b2a9d}{t}
+\begin{DoxyCompactList}\small\item\em ---Initialisation du tableau correspondant au t de chaque mesure \end{DoxyCompactList}\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_ab3e9d78d3f2a56d97dc60dba0cd6e79d}{frequence}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a695f502696fbf013ce1c9cda2c754917}{Vx} = np.\+gradient(self.\+y)
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a8d9f9bc28acbf0f4a05a16222b2e450f}{theta} = np.\+array(self.\+theta);
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a0f2d7b86e13cd53a7f357ac04fdf606c}{thetaV} = \hyperlink{namespacecmd__TTB_1_1utils_a59935c2b4ec8161367ca748f99c376cf}{utils.\+lifted\+Atan2}(\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a695f502696fbf013ce1c9cda2c754917}{Vx},Vy);
+\item 
+\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a70b267d03427145f555e919d3e2dc281}{v} = np.\+sqrt(\hyperlink{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a695f502696fbf013ce1c9cda2c754917}{Vx}$\ast$$\ast$2 + Vy$\ast$$\ast$2)$\ast$self.\+frequence
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, ttb\+Pose, vitesse\+Lineaire\+En\+Commande0, vitesse\+Angulaire\+En\+Commande0, F\+R\+E\+Q\+U\+E\+N\+C\+E)}{__init__(self, ttbPose, vitesseLineaireEnCommande0, vitesseAngulaireEnCommande0, FREQUENCE)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ttb\+Pose, }
+\item[{}]{vitesse\+Lineaire\+En\+Commande0, }
+\item[{}]{vitesse\+Angulaire\+En\+Commande0, }
+\item[{}]{F\+R\+E\+Q\+U\+E\+N\+CE}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_acbea9abbb037555264b3c5d326560670}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_acbea9abbb037555264b3c5d326560670}
+
+\begin{DoxyParams}{Parameters}
+{\em ttb\+Pose} & Pose2D Initial pose of the robot \\
+\hline
+{\em vitesse\+Lineaire\+En\+Commande0} & Double Initial linear speed \\
+\hline
+{\em vitesse\+Angulaire\+En\+Commande0} & Double Initial angular speed \\
+\hline
+{\em F\+R\+E\+Q\+U\+E\+N\+CE} & Double Frequence of the control law \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!errase@{errase}}
+\index{errase@{errase}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{errase(self)}{errase(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+errase (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a90a816bc1b190fda1e557c187eecb2a1}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a90a816bc1b190fda1e557c187eecb2a1}
+\begin{DoxyVerb}Efface le contenu des listes du DataGatherer\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!Erreur@{Erreur}}
+\index{Erreur@{Erreur}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{Erreur(self, consigne\+\_\+xy)}{Erreur(self, consigne_xy)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+Erreur (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{consigne\+\_\+xy}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a55e8ac388f6a9e4ad794b8561559c52d}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a55e8ac388f6a9e4ad794b8561559c52d}
+\begin{DoxyVerb}Calcul l'erreur de position moyenne\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!get\+InstantV@{get\+InstantV}}
+\index{get\+InstantV@{get\+InstantV}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{get\+Instant\+V(self)}{getInstantV(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+get\+InstantV (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a2bf0a24ac3fc5a9a76bc1eefebf31334}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a2bf0a24ac3fc5a9a76bc1eefebf31334}
+\begin{DoxyVerb}Retourne le dernier element de la liste des vitesses lineaires\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!get\+InstantW@{get\+InstantW}}
+\index{get\+InstantW@{get\+InstantW}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{get\+Instant\+W(self)}{getInstantW(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+get\+InstantW (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a875c925135b3f187974f15a322f692aa}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a875c925135b3f187974f15a322f692aa}
+\begin{DoxyVerb}Retourne le dernier element de la liste des vitesses angulaires\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!new\+Command@{new\+Command}}
+\index{new\+Command@{new\+Command}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{new\+Command(self, vitesse\+Lineaire\+En\+Commanden, vitesse\+Angulaire\+En\+Commanden)}{newCommand(self, vitesseLineaireEnCommanden, vitesseAngulaireEnCommanden)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+new\+Command (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{vitesse\+Lineaire\+En\+Commanden, }
+\item[{}]{vitesse\+Angulaire\+En\+Commanden}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_aa9c1979d72538a306c22fb573a0076b7}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_aa9c1979d72538a306c22fb573a0076b7}
+\begin{DoxyVerb}Stocke les dernieres commandes transmises au TTB, il est CONSEILLE de l'utiliser a chaque nouvelle mesure (i.e appel de la fonction newPos())\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!new\+Pos@{new\+Pos}}
+\index{new\+Pos@{new\+Pos}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{new\+Pos(self, new\+X, new\+Y, new\+Theta, vitesse\+Lineaire\+Instant=0)}{newPos(self, newX, newY, newTheta, vitesseLineaireInstant=0)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+new\+Pos (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{newX, }
+\item[{}]{newY, }
+\item[{}]{new\+Theta, }
+\item[{}]{vitesse\+Lineaire\+Instant = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a22be32d8a6818d2bd0d0cfcc06d2d58f}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a22be32d8a6818d2bd0d0cfcc06d2d58f}
+\begin{DoxyVerb}Stocke la derniere pose connue du TTB, il est CONSEILLE de l'utiliser le meme nombre de fois que newCommand()\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!plot@{plot}}
+\index{plot@{plot}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{plot(self, v\+Reference, w\+Reference, consigne\+\_\+xy=\+None, consigne\+\_\+theta=0, porte=\+None)}{plot(self, vReference, wReference, consigne_xy=None, consigne_theta=0, porte=None)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+plot (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{v\+Reference, }
+\item[{}]{w\+Reference, }
+\item[{}]{consigne\+\_\+xy = {\ttfamily None}, }
+\item[{}]{consigne\+\_\+theta = {\ttfamily 0}, }
+\item[{}]{porte = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a93a58d2eb75f586e0747278409fb8ef6}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a93a58d2eb75f586e0747278409fb8ef6}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!plot\+Trajectory@{plot\+Trajectory}}
+\index{plot\+Trajectory@{plot\+Trajectory}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{plot\+Trajectory(self, porte, position\+\_\+du\+\_\+repere)}{plotTrajectory(self, porte, position_du_repere)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+plot\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{porte, }
+\item[{}]{position\+\_\+du\+\_\+repere}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_afe246ad25d224494702fcc6eaddf57fe}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_afe246ad25d224494702fcc6eaddf57fe}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!save\+Data@{save\+Data}}
+\index{save\+Data@{save\+Data}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{save\+Data(self)}{saveData(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+save\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a7fd8d77061ff08059ba8deea2d184d93}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a7fd8d77061ff08059ba8deea2d184d93}
+\begin{DoxyVerb}Enregistre les donnees dans un fichier output.txt, jamais vraiment utilisee, fonction a tester, a ameliorer ou a supprimer, Marc 07/08/2017 \end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!to\+\_\+percent@{to\+\_\+percent}}
+\index{to\+\_\+percent@{to\+\_\+percent}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{to\+\_\+percent(self, y, position)}{to_percent(self, y, position)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+to\+\_\+percent (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{y, }
+\item[{}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_adad43343ec9a615148fd26377eabc3b8}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_adad43343ec9a615148fd26377eabc3b8}
+\begin{DoxyVerb}fonction utilisee uniquement dans plot() pour le trace des histogrammes\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!v@{v}}
+\index{v@{v}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{v(self)}{v(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+v (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a1a6ea334eab99d499f23e05b68af46c1}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a1a6ea334eab99d499f23e05b68af46c1}
+\begin{DoxyVerb}deprecated. Le signe de la vitesse lineaire est relativement imprevisible, fonction a eviter tant qu'elle ne sera pas corrigee, Marc 05/08/2017\end{DoxyVerb}
+ \index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!w@{w}}
+\index{w@{w}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{w(self)}{w(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+w (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_ae41c1980d73278b1d973713988729b9d}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_ae41c1980d73278b1d973713988729b9d}
+\begin{DoxyVerb}deprecated\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!B\+W\+Filter@{B\+W\+Filter}}
+\index{B\+W\+Filter@{B\+W\+Filter}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{B\+W\+Filter}{BWFilter}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+B\+W\+Filter}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a096d1a4edcb1a9189ebfbea80cb646b5}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a096d1a4edcb1a9189ebfbea80cb646b5}
+
+
+---Initialisation du filtre de butterworth (estimateur des vitesses) 
+
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!frequence@{frequence}}
+\index{frequence@{frequence}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{frequence}{frequence}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+frequence}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_ab3e9d78d3f2a56d97dc60dba0cd6e79d}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_ab3e9d78d3f2a56d97dc60dba0cd6e79d}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!t@{t}}
+\index{t@{t}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{t}{t}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+t}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a402999c8fcfdd46884f1afd92b3b2a9d}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a402999c8fcfdd46884f1afd92b3b2a9d}
+
+
+---Initialisation du tableau correspondant au t de chaque mesure 
+
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!theta@{theta}}
+\index{theta@{theta}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{theta}{theta}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+theta = np.\+array(self.\+theta);\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a8d9f9bc28acbf0f4a05a16222b2e450f}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a8d9f9bc28acbf0f4a05a16222b2e450f}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!thetaV@{thetaV}}
+\index{thetaV@{thetaV}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{thetaV}{thetaV}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+thetaV = {\bf utils.\+lifted\+Atan2}({\bf Vx},Vy);\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a0f2d7b86e13cd53a7f357ac04fdf606c}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a0f2d7b86e13cd53a7f357ac04fdf606c}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!v@{v}}
+\index{v@{v}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{v}{v}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+v = np.\+sqrt({\bf Vx}$\ast$$\ast$2 + Vy$\ast$$\ast$2)$\ast$self.\+frequence\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a70b267d03427145f555e919d3e2dc281}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a70b267d03427145f555e919d3e2dc281}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!vitesse\+Angulaire@{vitesse\+Angulaire}}
+\index{vitesse\+Angulaire@{vitesse\+Angulaire}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{vitesse\+Angulaire}{vitesseAngulaire}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+vitesse\+Angulaire}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_afc9fa9a763fe0ff962f1fc9aa8e33e33}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_afc9fa9a763fe0ff962f1fc9aa8e33e33}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!vitesse\+Angulaire\+En\+Commande@{vitesse\+Angulaire\+En\+Commande}}
+\index{vitesse\+Angulaire\+En\+Commande@{vitesse\+Angulaire\+En\+Commande}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{vitesse\+Angulaire\+En\+Commande}{vitesseAngulaireEnCommande}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+vitesse\+Angulaire\+En\+Commande}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_adf0b4f8826e0178d2a8fa681673f9284}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_adf0b4f8826e0178d2a8fa681673f9284}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!vitesse\+Lineaire@{vitesse\+Lineaire}}
+\index{vitesse\+Lineaire@{vitesse\+Lineaire}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{vitesse\+Lineaire}{vitesseLineaire}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+vitesse\+Lineaire}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a5d41f95d517db30b08d462522c3d973a}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a5d41f95d517db30b08d462522c3d973a}
+
+
+---Initialisation des vitesses angulaires et lineaires, ces vitesses ne sont pas a modifier directement, elles sont recalculuee a chaque nouvelle pose 
+
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!vitesse\+Lineaire\+En\+Commande@{vitesse\+Lineaire\+En\+Commande}}
+\index{vitesse\+Lineaire\+En\+Commande@{vitesse\+Lineaire\+En\+Commande}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{vitesse\+Lineaire\+En\+Commande}{vitesseLineaireEnCommande}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+vitesse\+Lineaire\+En\+Commande}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a92c6e630cfff49229d514a0ea1a26ce1}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a92c6e630cfff49229d514a0ea1a26ce1}
+
+
+---Initialisation des vitesses en commandes 
+
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!Vx@{Vx}}
+\index{Vx@{Vx}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{Vx}{Vx}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+Vx = np.\+gradient(self.\+y)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a695f502696fbf013ce1c9cda2c754917}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a695f502696fbf013ce1c9cda2c754917}
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!x@{x}}
+\index{x@{x}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+x}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a088d7c0901296ea4bca154bab6c76aa9}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a088d7c0901296ea4bca154bab6c76aa9}
+
+
+---Initialisation de la position du robot mobile en x,y,theta 
+
+\index{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}!y@{y}}
+\index{y@{y}!cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer@{cmd\+\_\+\+T\+T\+B\+::data\+Gatherer\+::\+Data\+Gatherer}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}cmd\+\_\+\+T\+T\+B.\+data\+Gatherer.\+Data\+Gatherer.\+y}\hypertarget{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a3b8b2b639cad9c1192ef10efa68f2b51}{}\label{classcmd__TTB_1_1dataGatherer_1_1DataGatherer_a3b8b2b639cad9c1192ef10efa68f2b51}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dataGatherer_8py}{data\+Gatherer.\+py}\end{DoxyCompactItemize}
